@@ -1,4 +1,4 @@
-SRCS			=	src/strstr.c src/algo_func4.c src/list_utils5.c src/algo_func3.c src/algo_func2.c src/algo_func1.c  src/list_utils4.c src/main.c src/algo.c src/ft_split.c src/atoi.c src/init_pile.c src/list_creation.c src/list_utils1.c src/list_utils2.c src/list_utils3.c src/parse.c
+SRCS			= src/strstr.c src/algo_func4.c src/list_utils5.c src/algo_func3.c src/algo_func2.c src/algo_func1.c  src/list_utils4.c src/main.c src/algo.c src/ft_split.c src/atoi.c src/init_pile.c src/list_creation.c src/list_utils1.c src/list_utils2.c src/list_utils3.c src/parse.c
 INCLUDES		= include/
 OBJS			= $(patsubst src/%.c,objs/%.o,$(SRCS))
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   algo_func2.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hmoulard <hmoulard@student.42.fr>          +#+  +:+       +#+        */
+/*   By: atsug0 <atsug0@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/16 10:13:19 by hmoulard          #+#    #+#             */
-/*   Updated: 2023/08/16 16:25:03 by hmoulard         ###   ########.fr       */
+/*   Updated: 2023/08/27 04:39:31 by atsug0           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,8 +97,10 @@ int	list_to_array_chunk(t_list *head, int size)
 	}
 	arr = tri_rap(arr, size);
 	fin = arr[size / (size / prefered_size(size))];
-	if (size >= 100)
+	if (size == 100)
 		fin = arr[size / 6];
+    if (size > 100)
+        fin = arr[size / 10];
 	free(arr);
 	return (fin);
 }

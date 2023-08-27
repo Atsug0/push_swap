@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   algo.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hmoulard <hmoulard@student.42.fr>          +#+  +:+       +#+        */
+/*   By: atsug0 <atsug0@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/14 17:00:21 by atsug0            #+#    #+#             */
-/*   Updated: 2023/08/25 14:49:07 by hmoulard         ###   ########.fr       */
+/*   Updated: 2023/08/27 04:28:32 by atsug0           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,9 +62,7 @@ int	algo(char **lst)
 	while (list_size(b) > 0)
 	{
 		while (list_size_chunk(b) > 3)
-		{
 			algo_part3(&a, &b, list_to_array(b, list_size_chunk(b)), 0);
-		}
 		algo_part4(&a, &b);
 		algo_part5(&a, &b, list_to_array(b, list_size_chunk(b)));
 	}
